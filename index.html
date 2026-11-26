@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="vi" data-sky="day" data-motion="full">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SUBSas+8sVF1rZLO9R5knAVCDYHbanN59chIGXC46RE='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; base-uri 'none'; form-action 'self'; object-src 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dương &amp; Ngân · 29.11.2026</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="Một ngày đặc biệt, một đời có nhau. Trân trọng mời bạn đến chung vui cùng Dương &amp; Ngân.">
+<meta name="theme-color" content="#0E1828">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Dương &amp; Ngân · 29.11.2026">
+<meta property="og:description" content="Một ngày đặc biệt, một đời có nhau. Trân trọng mời bạn đến chung vui cùng Dương &amp; Ngân.">
+<meta property="og:url" content="https://nero262.github.io/duong-ngan-wedding/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<script>
+/* Chạy trước khi vẽ trang: chọn sắc trời, chế độ chuyển động và quyết định có hiện tấm thiệp mở đầu hay không. */
+(function () {
+  var d = document.documentElement, ls = null;
+  try { ls = window.localStorage; } catch (e) {}
+  function get(k) { try { return ls && ls.getItem(k); } catch (e) { return null; } }
+  function set(k, v) { try { ls && ls.setItem(k, v); } catch (e) {} }
+  var pref = get('dn.sky') || 'auto';
+  var h = new Date().getHours();
+  var auto = h >= 6 && h < 16 ? 'day' : h >= 16 && h < 19 ? 'dusk' : 'night';
+  d.setAttribute('data-sky', pref === 'auto' ? auto : pref);
+  var m = get('dn.motion');
+  var prefersReduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  d.setAttribute('data-motion', (m ? m === 'reduced' : prefersReduced) ? 'reduced' : 'full');
+  d.className += ' js';
+  if (!get('dn.opened') && !/[?&]skipintro\b/.test(location.search)) {
+    d.className += ' intro-pending';
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  }
+  /* Nếu mã chính chưa tải được, khách vẫn mở được thiệp ngay. */
+  function release() { d.className = d.className.replace(/\s*intro-pending/g, ''); set('dn.opened', '1'); }
+  document.addEventListener('click', function (e) {
+    var t = e.target && e.target.closest && e.target.closest('[data-intro-skip],[data-intro-open]');
+    if (t && !window.__dnReady) release();
+  });
+  setTimeout(function () { if (!window.__dnReady) release(); }, 7000);
+})();
+</script>
+<link rel="preload" href="fonts/CormorantGaramond-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/CormorantGaramond-italic-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="modulepreload" href="js/util.js">
+<link rel="modulepreload" href="js/theme.js">
+<link rel="modulepreload" href="js/stage.js">
+<link rel="modulepreload" href="js/loop.js">
+<link rel="modulepreload" href="js/anim.js">
+<link rel="modulepreload" href="js/scene.js">
+<link rel="modulepreload" href="js/intro.js">
+<link rel="modulepreload" href="js/reveal.js">
+<link rel="modulepreload" href="js/pager.js">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="mono" viewBox="0 0 100 124"><path d="M18 118V52a32 32 0 0 1 64 0v66" fill="none" stroke="currentColor" stroke-width="1.4" style="stroke-width:var(--mono-line,1.4)"/><path d="M11 118h78" fill="none" stroke="currentColor" stroke-width="1.4" style="stroke-width:var(--mono-line,1.4)"/><path d="M50 31.5l1.2 3.6 3.6 1.2-3.6 1.2-1.2 3.6-1.2-3.6-3.6-1.2 3.6-1.2z" fill="currentColor"/><path transform="translate(23.6 61) scale(0.72)" d="M0 0H12C21.5 0 26 8.5 26 18C26 27.5 21.5 36 12 36H0V35.2H2.6V.8H0ZM6.4 1.3V34.7H11.5C18.8 34.7 22.4 27.4 22.4 18C22.4 8.6 18.8 1.3 11.5 1.3Z" fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="0" style="stroke-width:var(--mono-glyph,0)"/><path transform="translate(44.2 66.4) scale(0.72)" d="M13.6 19.8C10 15.5 6.5 11 4.6 8C3.2 5.8 3.6 1.2 6.6 1.2C9.4 1.2 9.6 4.8 7.6 6.6C5.6 8.4 1.2 10.6 1.2 14.6C1.2 18 3.6 19.8 6.4 19.8C9.6 19.8 11.6 16.8 12.6 12.4M10.4 12.2H14.4" fill="none" stroke="currentColor" stroke-width="1.6" style="stroke-width:var(--mono-amp,1.6)" stroke-linecap="round" stroke-linejoin="round"/><path transform="translate(56.2 61) scale(0.72)" d="M0 0H7L24.6 31.5V.9H21.4V0H28V.9H25.8V36H22.6L4 3.5V35.1H7V36H0V35.1H2.8V.9H0Z" fill="currentColor" stroke="currentColor" stroke-width="0" style="stroke-width:var(--mono-glyph,0)"/></symbol>
+  <symbol id="i-auto" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17M12 3.5a8.5 8.5 0 0 0 0 17" class="fillhalf"/></symbol>
+  <symbol id="i-day" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></symbol>
+  <symbol id="i-dusk" viewBox="0 0 24 24"><path d="M6.5 16a5.5 5.5 0 0 1 11 0M2.5 16h19M5 19.5h14M12 4.5v3M4.6 9.1l1.8 1.5M19.4 9.1l-1.8 1.5"/></symbol>
+  <symbol id="i-night" viewBox="0 0 24 24"><path d="M19.5 14.6A8 8 0 0 1 9.4 4.5a8 8 0 1 0 10.1 10.1Z"/><path d="M17 3.5l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6Z" class="fill"/></symbol>
+  <symbol id="i-motion" viewBox="0 0 24 24"><path d="M3 12c2.2-4 4.4-4 6.6 0s4.4 4 6.6 0 3.3-2.6 4.8-1.2"/><path d="M3 17.5h18M3 6.5h18" class="faint"/></symbol>
+  <symbol id="i-still" viewBox="0 0 24 24"><path d="M3 12h18M3 17.5h18M3 6.5h18"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5.5l11-2V16"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.8" r="2.3"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4M12 12.5v5M9.5 15h5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></symbol>
+</svg>
+
+<a class="skip-link" href="#loi-moi">Bỏ qua, đến lời mời</a>
+
+<!-- 0. Tấm thiệp khép -->
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+  <div class="intro__bg"></div>
+  <button class="intro__skip btn-text" type="button" data-intro-skip>Bỏ qua <span aria-hidden="true">›</span></button>
+  <div class="intro__stage">
+    <p class="intro__eyebrow" id="intro-title">Thư mời từ <span class="nowrap">Dương &amp; Ngân</span></p>
+    <p class="intro__guest" data-guest-line hidden>Gửi <strong data-guest-name></strong></p>
+    <div class="ic" aria-hidden="true">
+      <div class="ic__shadow"></div>
+      <div class="ic__body">
+        <!-- trang trong: căn phòng thu nhỏ, được vẽ bằng JavaScript theo đúng tỉ lệ khung cửa -->
+        <div class="ic__page"><div class="ic__shade"></div></div>
+        <div class="ic__cover">
+          <div class="ic__face ic__face--out">
+            <p class="cover__eyebrow">Thiệp mời cưới</p>
+            <p class="cover__names">Dương<span class="amp">&amp;</span>Ngân</p>
+            <p class="cover__date">29 · 11 · 2026</p>
+          </div>
+          <div class="ic__face ic__face--in"></div>
+        </div>
+        <div class="ic__ribbon"></div>
+        <div class="ic__seal"><svg class="seal__mono"><use href="#mono"/></svg></div>
+      </div>
+    </div>
+    <button class="btn btn--primary intro__open" type="button" data-intro-open>Mở thiệp</button>
+  </div>
+</div>
+
+<header class="toolbar" id="toolbar">
+  <button class="toolbar__brand" type="button" data-replay-intro aria-label="Xem lại cảnh mở thiệp — Dương &amp; Ngân" title="Xem lại cảnh mở thiệp"><svg class="mono" aria-hidden="true"><use href="#mono"/></svg></button>
+  <div class="toolbar__tools">
+    <div class="skymenu">
+      <button class="tool" type="button" id="sky-button" aria-haspopup="true" aria-expanded="false" aria-controls="sky-panel">
+        <svg class="icon" aria-hidden="true"><use href="#i-day" data-sky-icon/></svg><span class="tool__label">Đổi sắc trời</span>
+      </button>
+      <div class="skymenu__panel" id="sky-panel" role="group" aria-labelledby="sky-panel-title" hidden>
+        <p class="skymenu__title" id="sky-panel-title">Đổi sắc trời</p>
+        <label class="skyopt"><input type="radio" name="sky" value="auto"><svg class="icon" aria-hidden="true"><use href="#i-auto"/></svg><span>Tự động<small data-sky-auto-note>Theo giờ của bạn</small></span></label>
+        <label class="skyopt"><input type="radio" name="sky" value="day"><svg class="icon" aria-hidden="true"><use href="#i-day"/></svg><span>Sáng<small>Bình minh lấp lánh</small></span></label>
+        <label class="skyopt"><input type="radio" name="sky" value="dusk"><svg class="icon" aria-hidden="true"><use href="#i-dusk"/></svg><span>Trầm<small>Hoàng hôn dịu</small></span></label>
+        <label class="skyopt"><input type="radio" name="sky" value="night"><svg class="icon" aria-hidden="true"><use href="#i-night"/></svg><span>Tối<small>Đêm sao lấp lánh</small></span></label>
+      </div>
+    </div>
+    <button class="tool" type="button" id="motion-button" aria-pressed="false">
+      <svg class="icon" aria-hidden="true"><use href="#i-motion" data-motion-icon/></svg><span class="tool__label">Giảm chuyển động</span>
+    </button>
+    <button class="tool" type="button" id="music-button" aria-pressed="false">
+      <svg class="icon" aria-hidden="true"><use href="#i-music"/></svg><span class="tool__label" data-music-label>Bật nhạc</span>
+    </button>
+  </div>
+</header>
+
+<div class="stage" id="stage" aria-hidden="true">
+  <div class="stage__scene"><canvas class="scene__fx"></canvas></div>
+</div>
+
+<main id="top">
+  <!-- 1. Khung cửa -->
+  <section class="hero" id="hero" data-station="0" aria-labelledby="hero-title">
+    <div class="hero__content">
+      <p class="eyebrow">Thiệp mời cưới</p>
+      <p class="hero__guest" data-guest-line hidden>Thân mời <strong data-guest-name></strong></p>
+      <h1 class="names" id="hero-title">
+        <span class="names__one">Dương</span><span class="names__amp" aria-label="và">&amp;</span><span class="names__two">Ngân</span>
+      </h1>
+      <p class="hero__date"><time datetime="2026-11-29">29 · 11 · 2026</time></p>
+      <p class="hero__tagline">Một ngày đặc biệt, một đời có nhau.</p>
+    </div>
+    <a class="scroll-cue" href="#loi-moi" aria-label="Cuộn xuống đọc lời mời"><span></span></a>
+  </section>
+
+  <!-- 2. Lời mời -->
+  <section class="station" id="loi-moi" data-station="1" data-side="right" aria-labelledby="invite-title">
+    <i class="snap" aria-hidden="true"></i>
+    <div class="sheet invite__card">
+      <svg class="invite__mono" aria-hidden="true"><use href="#mono"/></svg>
+      <h2 class="invite__title" id="invite-title">Chúng mình sắp về chung một nhà</h2>
+      <div class="invite__couple">
+        <div class="person"><p class="person__role">Chú rể</p><p class="person__name">Lương Tùng Dương</p></div>
+        <span class="invite__amp" aria-hidden="true">&amp;</span>
+        <div class="person"><p class="person__role">Cô dâu</p><p class="person__name">Võ Thị Thúy Ngân</p></div>
+      </div>
+      <div class="invite__message"><p>Chúng mình sắp bắt đầu một hành trình mới — cùng nhau, từ một ngày rất đặc biệt.</p><p>Sẽ thật trọn vẹn nếu có bạn ở đó, để cùng chứng kiến lời hẹn ước, cùng nâng ly và giữ lại thật nhiều khoảnh khắc đẹp.</p></div>
+      <div class="datebox" aria-label="Ngày cưới">
+        <span class="datebox__weekday" data-weekday></span>
+        <span class="datebox__day" data-day></span>
+        <span class="datebox__month" data-month></span>
+      </div>
+      <p class="invite__countdown" data-countdown></p>
+      <p class="invite__closing">Sự có mặt của bạn là món quà ý nghĩa nhất với chúng mình.</p>
+      <div class="families" data-families></div>
+    </div>
+  </section>
+
+  <!-- 3. Những ngày có nhau -->
+  <section class="station" id="album" data-station="2" data-side="right" aria-labelledby="story-title">
+    <i class="snap" aria-hidden="true"></i>
+    <div class="sheet story">
+    <header class="section__head">
+      <p class="eyebrow">Album</p>
+      <h2 class="section__title" id="story-title">Together, Our New Journey Begins</h2>
+    </header>
+    <div class="story__root" data-story></div>
+    </div>
+  </section>
+
+  <!-- 4. Thông tin lễ cưới -->
+  <section class="station" id="thong-tin" data-station="3" data-side="right" aria-labelledby="events-title">
+    <i class="snap" aria-hidden="true"></i>
+    <div class="sheet events">
+    <header class="section__head">
+      <p class="eyebrow">Lễ cưới</p>
+      <h2 class="section__title" id="events-title">Thông tin lễ cưới</h2>
+    </header>
+    <div class="events__list" data-events></div>
+    </div>
+  </section>
+
+  <!-- 5. Xác nhận tham dự -->
+  <section class="station" id="xac-nhan" data-station="4" data-side="left" aria-labelledby="rsvp-title">
+    <i class="snap" aria-hidden="true"></i>
+    <div class="sheet rsvp">
+    <header class="section__head">
+      <p class="eyebrow">Xác nhận</p>
+      <h2 class="section__title" id="rsvp-title">Bạn sẽ đến chứ?</h2>
+      <p class="section__lead">Hãy cho chúng mình biết để chuẩn bị đón bạn thật chu đáo nhé.</p>
+      <p class="section__note" data-rsvp-deadline hidden></p>
+    </header>
+    <div class="formcard">
+      <div class="preview-banner" data-preview-banner hidden role="note">
+        <strong>Biểu mẫu xem thử.</strong> Trang này chưa kết nối được nơi lưu dữ liệu nên chưa thể gửi phản hồi. Bạn vẫn có thể điền thử.
+      </div>
+      <form class="form" id="rsvp-form" novalidate>
+        <div class="form__row">
+        <div class="field">
+          <label class="field__label" for="rsvp-name">Tên của bạn</label>
+          <input class="input" id="rsvp-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="rsvp-name-err">
+          <p class="field__error" id="rsvp-name-err" data-error-for="name"></p>
+        </div>
+        <div class="field field--guests" data-when-yes hidden>
+          <label class="field__label" for="rsvp-guests">Số người <span class="field__hint">(cả bạn)</span></label>
+          <div class="stepper">
+            <button class="stepper__btn" type="button" data-step="-1" aria-label="Bớt một người">−</button>
+            <input class="input stepper__input" id="rsvp-guests" name="guests" type="number" inputmode="numeric" min="1" max="10" value="1" aria-describedby="rsvp-guests-err">
+            <button class="stepper__btn" type="button" data-step="1" aria-label="Thêm một người">+</button>
+          </div>
+          <p class="field__error" id="rsvp-guests-err" data-error-for="guests"></p>
+        </div>
+        </div>
+        <fieldset class="field" aria-describedby="rsvp-att-err">
+          <legend class="field__label">Bạn có thể tham dự không?</legend>
+          <div class="choices choices--row">
+            <label class="choice"><input type="radio" name="attending" value="yes"><span>Mình sẽ đến</span></label>
+            <label class="choice"><input type="radio" name="attending" value="no"><span>Không đến được</span></label>
+            <label class="choice"><input type="radio" name="attending" value="maybe"><span>Chưa chắc</span></label>
+          </div>
+          <p class="field__error" id="rsvp-att-err" data-error-for="attending"></p>
+        </fieldset>
+        <fieldset class="field" data-when-yes data-event-choices hidden aria-describedby="rsvp-ev-err">
+          <legend class="field__label">Bạn sẽ tham dự</legend>
+          <div class="choices choices--row" data-event-list></div>
+          <p class="field__error" id="rsvp-ev-err" data-error-for="events"></p>
+        </fieldset>
+        <div class="field">
+          <label class="field__label" for="rsvp-message">Lời nhắn riêng gửi chúng mình</label>
+          <textarea class="input textarea" id="rsvp-message" name="message" rows="2" maxlength="600" aria-describedby="rsvp-message-help"></textarea>
+          <p class="field__help" id="rsvp-message-help">Chỉ hai đứa mình đọc, không hiển thị công khai. <span data-count-for="rsvp-message"></span></p>
+        </div>
+        <div class="hp" aria-hidden="true"><label>Để trống ô này <input type="text" name="hp" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form__status" data-status role="status" aria-live="polite"></div>
+        <button class="btn btn--primary btn--block" type="submit" data-submit><span data-submit-label>Gửi xác nhận</span></button>
+      </form>
+      <div class="done" data-done hidden tabindex="-1">
+        <svg class="done__rings" viewBox="0 0 120 70" aria-hidden="true"><circle cx="46" cy="38" r="22"/><circle cx="74" cy="38" r="22"/><path d="M60 9.5l1.4 4 4 1.4-4 1.4-1.4 4-1.4-4-4-1.4 4-1.4Z" class="done__spark"/></svg>
+        <h3 class="done__title" data-done-title>Cảm ơn bạn!</h3>
+        <p class="done__text" data-done-text></p>
+        <button class="btn btn--ghost" type="button" data-again>Gửi thêm một phản hồi</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- 6. Sổ lưu bút -->
+  <section class="station" id="luu-but" data-station="5" data-side="left" aria-labelledby="gb-title">
+    <i class="snap" aria-hidden="true"></i>
+    <div class="sheet guestbook">
+    <header class="section__head">
+      <p class="eyebrow">Sổ lưu bút</p>
+      <h2 class="section__title" id="gb-title">Gửi lời chúc</h2>
+      <p class="section__lead">Đôi dòng của bạn sẽ được chúng mình giữ lại thật lâu.</p>
+    </header>
+    <div class="guestbook__grid">
+      <div class="formcard formcard--small">
+        <div class="preview-banner" data-preview-banner hidden role="note">
+          <strong>Biểu mẫu xem thử.</strong> Chưa kết nối được nơi lưu dữ liệu nên chưa thể gửi lời chúc.
+        </div>
+        <form class="form" id="wish-form" novalidate>
+          <div class="field">
+            <label class="field__label" for="wish-name">Tên của bạn</label>
+            <input class="input" id="wish-name" name="name" type="text" autocomplete="name" maxlength="60" required aria-describedby="wish-name-err">
+            <p class="field__error" id="wish-name-err" data-error-for="name"></p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="wish-message">Lời chúc</label>
+            <textarea class="input textarea" id="wish-message" name="message" rows="4" maxlength="500" required aria-describedby="wish-message-err"></textarea>
+            <p class="field__error" id="wish-message-err" data-error-for="message"></p>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Để trống ô này <input type="text" name="hp" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form__status" data-status role="status" aria-live="polite"></div>
+          <button class="btn btn--primary btn--block" type="submit" data-submit><span data-submit-label>Gửi lời chúc</span></button>
+        </form>
+        <div class="done done--small" data-done hidden tabindex="-1">
+          <h3 class="done__title">Đã nhận lời chúc của bạn</h3>
+          <p class="done__text">Lời chúc sẽ xuất hiện trên sổ lưu bút sau khi được duyệt. Cảm ơn bạn thật nhiều!</p>
+          <button class="btn btn--ghost" type="button" data-again>Viết thêm lời chúc</button>
+        </div>
+      </div>
+      <div class="wishes">
+        <ul class="wishes__list" data-wishes aria-label="Lời chúc đã nhận" hidden></ul>
+        <p class="wishes__empty" data-wishes-empty hidden>Chưa có lời chúc nào được hiển thị. Lời chúc đầu tiên có thể là của bạn.</p>
+        <p class="wishes__error" data-wishes-error hidden>Chưa tải được sổ lưu bút. <button class="btn-text" type="button" data-wishes-retry>Thử lại</button></p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- 7. Lời cảm ơn -->
+  <section class="thanks station" id="loi-cam-on" data-station="6" aria-labelledby="thanks-title">
+    <div class="thanks__content">
+      <h2 class="thanks__text" id="thanks-title">Cảm ơn bạn đã trở thành một phần trong ngày đặc biệt của chúng mình.</h2>
+      <p class="thanks__sign"><span class="thanks__names">Dương &amp; Ngân</span> · 29.11.2026</p>
+      <div class="hero__actions thanks__actions">
+        <a class="btn btn--ghost" href="#top">Về đầu trang</a>
+        <a class="btn btn--primary" href="#xac-nhan">Xác nhận tham dự</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<a class="fab btn btn--primary" href="#xac-nhan" data-fab tabindex="-1" aria-hidden="true">Xác nhận tham dự</a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Xem ảnh">
+  <div class="lightbox__inner">
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <p class="lightbox__count" aria-live="polite"></p>
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Đóng"><svg class="icon"><use href="#i-close"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Ảnh trước"><svg class="icon"><use href="#i-prev"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Ảnh sau"><svg class="icon"><use href="#i-next"/></svg></button>
+  </div>
+</dialog>
+
+<noscript><p class="noscript">Trang này cần JavaScript để hiển thị album, thông tin lễ cưới và biểu mẫu xác nhận.</p></noscript>
+<script type="application/json" id="content-data">{"couple":{"displayName":"Dương & Ngân","groom":{"short":"Dương","fullName":"Lương Tùng Dương"},"bride":{"short":"Ngân","fullName":"Võ Thị Thúy Ngân"}},"wedding":{"date":"2026-11-29","timezone":"Asia/Ho_Chi_Minh"},"invitation":{"eyebrow":"Thiệp mời cưới","tagline":"Một ngày đặc biệt, một đời có nhau.","heading":"Chúng mình sắp về chung một nhà","message":"Chúng mình sắp bắt đầu một hành trình mới — cùng nhau, từ một ngày rất đặc biệt.\nSẽ thật trọn vẹn nếu có bạn ở đó, để cùng chứng kiến lời hẹn ước, cùng nâng ly và giữ lại thật nhiều khoảnh khắc đẹp.","closing":"Sự có mặt của bạn là món quà ý nghĩa nhất với chúng mình."},"families":{"groom":{"label":"Nhà trai","parents":"Ông Lương Mạnh Hùng\nBà Lê Thanh Thủy","address":"Phường Hoàng Mai, Hà Nội"},"bride":{"label":"Nhà gái","parents":"Ông Võ Văn Nam\nBà Trần Thị Loan","address":"Xã Vạn An, Nghệ An"}},"events":[{"id":"tiec-nha-gai","kind":"bride","title":"Tiệc cưới nhà gái","date":"2026-11-28","start":"10:00","end":"","venue":"Tư gia nhà gái","address":"Xóm Quang Trung, xã Vạn An, Nghệ An","city":"Nghệ An","mapUrl":"https://maps.app.goo.gl/SRwcCqmqsCcRc1C5A","note":"","rsvp":true,"schedule":[]},{"id":"le-thanh-hon","kind":"ceremony","title":"Lễ thành hôn","date":"2026-11-28","start":"16:30","end":"","venue":"Tư gia nhà trai","address":"Số 10, ngõ 275, đường Yên Duyên, phường Hoàng Mai, Hà Nội","city":"Hà Nội","mapUrl":"https://maps.app.goo.gl/FwfXzy481ZacvWLE7","note":"","rsvp":false,"schedule":[]},{"id":"tiec-nha-trai","kind":"groom","title":"Tiệc cưới nhà trai","date":"2026-11-29","start":"10:30","end":"","venue":"Nhà văn hoá phía Đông","address":"Số 2, ngõ 22, đường Khuyến Lương, phường Lĩnh Nam, Hà Nội","city":"Hà Nội","mapUrl":"https://maps.app.goo.gl/gVCFRemsQybTUvsZ6","note":"","rsvp":true,"schedule":[{"time":"10:30","label":"Đón khách"},{"time":"10:45","label":"Khai tiệc"}]}],"story":{"eyebrow":"Album","title":"Together, Our New Journey Begins","cover":{"src":"assets/album/bia-960.13728abf.webp","srcset":"assets/album/bia-480.13728abf.webp 480w, assets/album/bia-960.13728abf.webp 960w, assets/album/bia-1600.13728abf.webp 1600w","w":1772,"h":1772,"lqip":"data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQBQCdASoYABgAPuVgpk2pJaOiMAwBIByJZAC7MuuzGDunXZ7R4hsgqg4/9ZDcwVSBbrSAAAD+FHSuytRd9WloebgLR1i6YLOqHZ3Ovdv60UkBqLSE1OQ+wszBTSp1HhSp14j95GSpU7UBOl2QxYzifWtmSoOUqfQvlsXthlOJxVKrbbz/0YRX3XsbrAAAAAA=","alt":"Bìa album cưới Dương & Ngân"},"pages":[{"id":"nd-01","src":"assets/album/nd-01-1600.d71a7b47.webp","srcset":"assets/album/nd-01-1000.d71a7b47.webp 1000w, assets/album/nd-01-1600.d71a7b47.webp 1600w, assets/album/nd-01-2400.d71a7b47.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JZQC7Ef/i2MVXXsa8Naw91jAAAP7HJx+AWAJIdfTfF294YtLw2D4A9DpVblwLGDVBukgRAsShedQysmDUSMqHx4spZ1SOBQPd9C6qsF2mZ+e9pLDztSXjGD5hdXP/FG28nwWHDm8hiYzAamzaxk6/63sRxY6fz5Mjaglt+Vat6rQI7bhxyLMAAAA=","alt":"Album cưới Dương & Ngân — trang 1"},{"id":"nd-02","src":"assets/album/nd-02-1600.58c9aba9.webp","srcset":"assets/album/nd-02-1000.58c9aba9.webp 1000w, assets/album/nd-02-1600.58c9aba9.webp 1600w, assets/album/nd-02-2400.58c9aba9.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoYAAwAPu1iqU2ppaQiMAgBMB2JZwDLLYyKoLftrWjU4vtzAAD+W+kWAVGZEUrxq6OMX4Ucnn0pycs+8RineGU5DEVdT8ESXJ2ucbDIJdOioW6QI9GgvF+JqYn+wTo4dH8BECcTbSyguTJFCxACWJ0qTF+Vd8igaPS+JTKTlvcNMUVnIAA=","alt":"Album cưới Dương & Ngân — trang 2"},{"id":"nd-03","src":"assets/album/nd-03-1600.8614085e.webp","srcset":"assets/album/nd-03-1000.8614085e.webp 1000w, assets/album/nd-03-1600.8614085e.webp 1600w, assets/album/nd-03-2400.8614085e.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAAwAPu1iqU2ppaQiMAgBMB2JaQAAYXKK1st67RZhPJkXQAD+7etlMgUMtKCXrSHjbHfE7hKPgC7s3p540z82cnhvIpgMqsNYDFp4ldwvDqBnSPkJeOle3RlscfJVX4/o7RjBvvHt1XCJn1kjcrLgd+j9tAQAAAA=","alt":"Album cưới Dương & Ngân — trang 3"},{"id":"nd-04","src":"assets/album/nd-04-1600.d205bf9c.webp","srcset":"assets/album/nd-04-1000.d205bf9c.webp 1000w, assets/album/nd-04-1600.d205bf9c.webp 1600w, assets/album/nd-04-2400.d205bf9c.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JZQCsAYw6oEnO13oCOreN4AAA/qukh3JNOu4h7BbxDgt8q6SsYxyAHioWBJPwSuXxPEfbkK+TQeVEGI+ZNJAT6ju5nYQCZkqdVoJJb/V2tEPEv+qNLaDCv2n00Lg0rZGBfPxCrQtCeJ8bFANgyn7hKPlP2ufIyyDiRB+yjOYEaUXvHmRawAAA","alt":"Album cưới Dương & Ngân — trang 4"},{"id":"nd-05","src":"assets/album/nd-05-1600.a35d894e.webp","srcset":"assets/album/nd-05-1000.a35d894e.webp 1000w, assets/album/nd-05-1600.a35d894e.webp 1600w, assets/album/nd-05-2400.a35d894e.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoYAAwAPu1iqk4ppaQiMAgBMB2JZwCsAYuQ37WWtg9qCvSBn6oAAP7v6zXMrQyBuH50i6+dCFfP4kr66X47p2AnfBtKZDZUx0Pt3LlO5ehDPV/yAoHOVECm/UhzhftLDxAGy4/o3Ih3UA8ObT9ym6CeBbxT7cgpUVm55lQA","alt":"Album cưới Dương & Ngân — trang 5"},{"id":"nd-06","src":"assets/album/nd-06-1600.0ff501e7.webp","srcset":"assets/album/nd-06-1000.0ff501e7.webp 1000w, assets/album/nd-06-1600.0ff501e7.webp 1600w, assets/album/nd-06-2400.0ff501e7.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAwCdASoYAAwALrV2u12jqampiYC0SzgGFAIWUnax8/zyGAAA/vZGVlcnLhmHdGDOAiEik0kBUOsSdQNzNYyoeIWBUhx+oH9MWi9+YjvYgxcnfMtFAAAA","alt":"Album cưới Dương & Ngân — trang 6"},{"id":"nd-07","src":"assets/album/nd-07-1600.8cf409bc.webp","srcset":"assets/album/nd-07-1000.8cf409bc.webp 1000w, assets/album/nd-07-1600.8cf409bc.webp 1600w, assets/album/nd-07-2400.8cf409bc.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoYAAwAPu1iqU2ppaQiMAgBMB2JYwC7AywTn4ZsnBJdObjTGrFAAP7gpRpq7KfuufhRkbzAoWb5iCPyUsSXNsyNGaDctMhrUaWKkZvGfF0V7FWmsBl3zM0eQaTu+HmYAyn8YvDiXCaZBem69On/JEvgwx+ViyoqKZnYj3kKxXtfgrAdG2Zp0gbCqkjTOnALokid4eFQJPhgAAAA","alt":"Album cưới Dương & Ngân — trang 7"},{"id":"nd-08","src":"assets/album/nd-08-1600.a48e692b.webp","srcset":"assets/album/nd-08-1000.a48e692b.webp 1000w, assets/album/nd-08-1600.a48e692b.webp 1600w, assets/album/nd-08-2400.a48e692b.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACQBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JZQCsAYx2z8ohQOPPwX2OB8AZYVAA9kO9zN8ptoj6/wy7RCeuXnAnolzk1X9bY6XC5EZCLxnXlLgZAc0KVd0O9/h7Xh4FvvOIYStHI9t3d10vGjB6m1t6fQq/p95BqMAuxFjl9kXZDzkfo71ZdQS6vZbrRsn/kB2/YJ+d91wB+8r9l37Ngk6FLnWSGzkAj/tAbJjcLeIgAA==","alt":"Album cưới Dương & Ngân — trang 8"},{"id":"nd-09","src":"assets/album/nd-09-1600.f8571b7c.webp","srcset":"assets/album/nd-09-1000.f8571b7c.webp 1000w, assets/album/nd-09-1600.f8571b7c.webp 1600w, assets/album/nd-09-2400.f8571b7c.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAwBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JYwCdAYvCfiB6mFhp/7uaOFAAzj9slJExqf3AnH2EUEwIYZeoVdNDuCROEX2Gn2UpBo0IddAKPeoKf4QZw4MSET8y6frgoxwgoQQOArFGMKdneRphLFzg8CkyKawxyq5jvHCDj2LxOUvX6MNSMF4mMwiTaufyWRO1NHLylpxJXJ5af+PSnaWx10VZV8AA","alt":"Album cưới Dương & Ngân — trang 9"},{"id":"nd-10","src":"assets/album/nd-10-1600.0d902663.webp","srcset":"assets/album/nd-10-1000.0d902663.webp 1000w, assets/album/nd-10-1600.0d902663.webp 1600w, assets/album/nd-10-2400.0d902663.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABQBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JYwCsAYxY7aYdMkpZsY2JlRvAAP7BpAuda6qR8UhSccDC8X1ydwO1iWUErZD47Aq5Onls0obxuf6pMXPxl879LSWdcpX3qKvdQJ46DeR7fDAFPnwcvcspSWgPWTobN1JeSfZ9GNdfrJqYRbkmh19HPJmQM+1zlD2YAAoSBAAAAA==","alt":"Album cưới Dương & Ngân — trang 10"},{"id":"nd-11","src":"assets/album/nd-11-1600.bca735ab.webp","srcset":"assets/album/nd-11-1000.bca735ab.webp 1000w, assets/album/nd-11-1600.bca735ab.webp 1600w, assets/album/nd-11-2400.bca735ab.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JZQAAV5nP3QtT+mnYEBDKtAAA9pdV+eEWaYDH5Y2RkAiPuufgYZp6nyb5PbdqJ9Ls0rgFP3piTPxpJDnnNX6Z6z+sotgAwrFV50H/0rcKAXUKJ9DAzB5P8Es5RJAnfAAAAA==","alt":"Album cưới Dương & Ngân — trang 11"},{"id":"nd-12","src":"assets/album/nd-12-1600.46022412.webp","srcset":"assets/album/nd-12-1000.46022412.webp 1000w, assets/album/nd-12-1600.46022412.webp 1600w, assets/album/nd-12-2400.46022412.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JZwC+SB6Vwxjl0c65Um+3gAD+6R4PKZUBEH3Uec5IyRdbXb56kRJZRz3v8/6q1nx3OA0yv5h5g2s0pKSrsAuqa8DGtd5cGHON+hBHHEz72CNl5C35BfCaRs/2DoyBfBXFYg1UAAA=","alt":"Album cưới Dương & Ngân — trang 12"},{"id":"nd-13","src":"assets/album/nd-13-1600.beb937dd.webp","srcset":"assets/album/nd-13-1000.beb937dd.webp 1000w, assets/album/nd-13-1600.beb937dd.webp 1600w, assets/album/nd-13-2400.beb937dd.webp 2400w","w":3544,"h":1772,"lqip":"data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACwAwCdASoYAAwAPu1iqU2ppaQiMAgBMB2JZwAARl7eGB/69KpgAAD+6PAZ2dbfzxx+WJvxX/nhYES6rYi08cty+9MFOvMSxWrPrObmTUFn2j/cxMf/0PO5OT8/HIsOKX7fRCgr5fj6JvISUPm/qIThw4H5qpMAyIQAAA==","alt":"Album cưới Dương & Ngân — trang 13"}]},"rsvp":{"open":true,"deadline":"2026-11-25","maxGuests":10,"intro":"Hãy cho chúng mình biết để chuẩn bị đón bạn thật chu đáo nhé."},"guestbook":{"intro":"Đôi dòng của bạn sẽ được chúng mình giữ lại thật lâu."},"thanks":{"message":"Cảm ơn bạn đã trở thành một phần trong ngày đặc biệt của chúng mình."},"music":{"playlist":[{"title":"Perfect","artist":"Ed Sheeran","src":"assets/music/01-perfect.ed732444.m4a"},{"title":"Thinking Out Loud","artist":"Ed Sheeran","src":"assets/music/02-thinking-out-loud.c61b14f6.m4a"},{"title":"Photograph","artist":"Ed Sheeran","src":"assets/music/03-photograph.14c79eee.m4a"},{"title":"Nothing's Gonna Change My Love for You","artist":"Glenn Medeiros","src":"assets/music/04-nothing-s-gonna-change-my-love-for-you.0e2d5827.m4a"},{"title":"Beautiful in White","artist":"Shane Filan","src":"assets/music/05-beautiful-in-white.71420f8d.m4a"},{"title":"I Do","artist":"911","src":"assets/music/06-i-do.42602288.m4a"}]},"share":{"siteUrl":"https://nero262.github.io/duong-ngan-wedding/","title":"Dương & Ngân · 29.11.2026","description":"Một ngày đặc biệt, một đời có nhau. Trân trọng mời bạn đến chung vui cùng Dương & Ngân."},"settings":{"personalizedInvites":true,"sheetApi":"https://script.google.com/macros/s/AKfycbzp7MiK5v2ChCGX1-YcnEgpLEchzFQBCdfASPPdFhFGTYq2D5Ya7y_Kr0krQHPNOMfU/exec"}}</script>
+</body>
+</html>
